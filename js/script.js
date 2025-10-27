@@ -25,10 +25,13 @@ document.getElementById("eventForm").addEventListener("submit", function(event) 
     const name = document.getElementById("name").value.trim();
     const phone = document.getElementById("phone").value.trim();
     const email = document.getElementById("email").value.trim();
+    const guest = document.getElementById("guest").value;
     const outlet = document.getElementById("outlet").value;
     const date = document.getElementById("eventDate").value;
+    const message = document.getElementById("message").value.trim();
+
     // basic validation
-    if (!name || !phone || !email || !outlet || !date) {
+    if (!name || !phone || !email || !guest || !outlet || !date ) {
       alert("Please fill in all required fields.");
       return;
     }
@@ -39,6 +42,21 @@ document.getElementById("eventForm").addEventListener("submit", function(event) 
       alert("Please enter a valid email address.");
       return;
     }
+
+    // store data in localStorage
+    const formData = {
+      name: name,
+      phone: phone,
+      email: email,
+      guest: guest,
+      outlet: outlet,
+      date: date,
+      message: message,
+      submittedAt: new Date().toLocaleString()
+    };
+
+    localStorage.setItem("eventInquiry", JSON.stringify(formData));
+
+    // redirect to thank you page
     window.location.href = "thank-you.html";
 });
-

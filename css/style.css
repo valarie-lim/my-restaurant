@@ -135,13 +135,15 @@ header.scrolled {
 	color: #FFF8E5;
 	border: 1px solid #FFF8E5;
 }
-
+.required{
+	color: red;
+}
 /*=== THANK YOU PAGE ===*/
 .thank-you-text{
 	padding: 0 10%;
 	height: 100%;
 	width: 100%;
-	min-height:90vh;
+	min-height:60vh;
 	background: #FFF8E5;
 	position: relative;
 	display: grid;
@@ -158,10 +160,9 @@ header.scrolled {
 .thank-you-text p{
 	font-size: 20px;
 	line-height: 1.9;
-	margin: 0 50px 10px;
+	margin: 0 50px;
 	padding: 0 150px;
 }
-
 /*=== BANNER ===*/
 .banner {
   width: 100vw;

@@ -14,14 +14,16 @@
 <body>
 <!-- N A V I G A T I O N -->
 	<header id="main-header"><a href="#" class="logo">MY Réstaurant</a>
-		<ul class="navlist">
+		<nav>
+			<ul class="navlist">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about-us.html">About Us</a></li>	
 			<li><a href="our-menu.html">Menu</a></li>
 			<li><a href="our-location.html">Location</a></li>
-			<li><a href="#" style="color: #B23F16">Events</a></li>
+			<li><a href="#" style="color: #B23F16;">Events</a></li>
 			<li><a href="contact-us.html">Contact Us</a></li>
-		</ul>
+			</ul>
+		</nav>
 		<div class="social-icons">
 		    <a href="https://www.facebook.com"><i class="ri-facebook-box-fill"></i></a>
 		    <a href="https://www.instagram.com"><i class="ri-instagram-fill"></i></a>
@@ -70,20 +72,25 @@
 
 		<form id="eventForm" class="form-container">
 		  <div class="form-group">
-		    <label>Name:</label>
+		    <label>Name:<span class="required">*</span></label>
 		    <input id="name" type="text" name="Name" tabindex="1" required>
 		  </div>
 		  <div class="form-group">
-		    <label>Phone:</label>
-		    <input id="phone" type="text" name="Contact Number" tabindex="2" required>
+		    <label>Phone:<span class="required">*</span></label>
+		    <input id="phone" type="text" name="Contact Number" tabindex="2" placeholder="012-3456789" required>
 		  </div>
 		  <div class="form-group">
-		    <label>Email:</label>
-		    <input id="email" type="email" name="Email" tabindex="3" required>
+		    <label>Email:<span class="required">*</span></label>
+		    <input id="email" type="email" name="Email" tabindex="3" placeholder="example@gmail.com" required>
 		  </div>
 		  <div class="form-group">
-		    <label>Outlet:</label>
-		    <select id="outlet" name="Outlet" tabindex="4" required>
+		    <label>Number of Guest:<span class="required">*</span></label>
+		    <h6><span class="required"><em>>Each of our outlet event halls can accommodate between 10 and 50 guests.</em></span></h6>
+		    <input id="guest" type="number" name="Guest" min="10" max="50" tabindex="4" placeholder="enter number from 10 to 50" required>
+		  </div>
+		  <div class="form-group">
+		    <label>Outlet:<span class="required">*</span></label>
+		    <select id="outlet" name="Outlet" tabindex="5" required>
 		      <option value="">Select outlet</option>
 		      <option value="Johor">Johor</option>
 		      <option value="Kuala Lumpur">Kuala Lumpur</option>
@@ -92,14 +99,14 @@
 		    </select>
 		  </div>
 		  <div class="form-group">
-		    <label>Date of Event:</label>
-		    <input id="eventDate" type="date" name="Date of Event" tabindex="5" required>
+		    <label>Date of Event:<span class="required">*</span></label>
+		    <input id="eventDate" type="date" name="Date of Event" tabindex="6" required>
 		  </div>
 		  <div class="form-group">
 		    <label>Message:</label>
-		    <textarea id="message" tabindex="6" placeholder="Your Message.." ></textarea>
+		    <textarea id="message" tabindex="7" placeholder="Your Message.." ></textarea>
 		  </div>
-		  <button type="submit" tabindex="7">Submit</button>
+		  <button type="submit" tabindex="8">Submit</button>
 		</form>
 	</section>
 
@@ -112,5 +119,4 @@
 <!-- J A V A S C R I P T -->
 	<script src="js/script.js"></script>
 </body>
-
 </html>
