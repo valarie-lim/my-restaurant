@@ -535,8 +535,8 @@ margin: 10% 0;
 		max-width: 800px;
 	}
 	.section-story-text hr{
-		width: 6vw;
-		margin: 10% auto;
+		width: 8vw;
+		margin: 3% auto;
 	}
 	.section-story-img{
 		text-align: center;
@@ -717,4 +717,5 @@ margin: 10% 0;
 		padding: 0 1%;
 	}
 } 
+
 
