@@ -30,19 +30,16 @@
 		    margin: 5px 0;
 		}
 		.outlet-img img {
-		    width: 300px;
+		    width: 50%;	/*--1-- images too small, so enlarge it. use % more flexible then px*/
 		    height: auto;
 		    border-radius: 8px;
 		    transition: transform 0.3s ease;
+		    margin: 20px auto;	/*--2-- push the images away from the contact no.*/
 		}
 		.outlet-img img:hover {
 		    transform: scale(1.05);
-		}.hover-img {
-		    width: 300px;
-		    height: auto;
-		    border-radius: 8px;
-		    transition: opacity 0.3s ease;
 		}
+									/*--3-- hover-img has not effect，so I remove it. */
 
 		/* Subscribe Box */
 		.subscribe-box {
@@ -51,6 +48,9 @@
 		    padding: 20px;
 		    background: #f8f8f8;
 		    border-radius: 8px;
+		}
+		.subscribe-box h3 {
+			margin: 20px auto;		/*--4-- add margin to create some space between heading and input box. */
 		}
 		.subscribe-box input {
 		    padding: 10px;
@@ -73,7 +73,7 @@
 		}
 		/* Location Section */
 		.location-section {
-		    max-width: 1200px;
+		    max-width: 100%;	/*--5-- use % more flexible in resizing. */
 		    margin: 40px auto;
 		    padding: 0 20px;
 		}
@@ -82,14 +82,47 @@
 		    margin-bottom: 30px;
 		    font-family: 'Special Elite', cursive;
 		    color: #B23F16;
-		     font-size: 35px;
+		    font-size: 35px;
 		}
 
 
 	/*=== R E S P O N S I V E N E S S ===*/
+		@media (max-width: 1340px){
+			.subscribe-box {
+			    padding-bottom: 5%;
+			}
+			.location-section h2 {
+			    margin-top: 8%;
+			}
+		}
+		@media (max-width: 768px){
+			.outlet {
+			    padding: 15px;
+			    margin-bottom: 30px;
+				}
+			.outlet-img img {
+			    width: 70%;
+			}
+			.location-section h2 {
+			    margin-top: 10%;
+			}
+		}
 		@media (max-width: 360px){
+			.outlet-img img {
+			    width: 100%;
+			}
+			.subscribe-box h3 {
+				margin: 10% auto;
+			}
 			.subscribe-box input {
-		   		margin: 10% auto;
+			    margin-right: 0;
+			    margin-bottom: 5%;
+			}
+			.subscribe-box button {
+				margin-bottom: 6%;
+			}
+			.location-section h2 {
+			    margin-top: 20%;
 			}
 		}
 	</style>

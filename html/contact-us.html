@@ -16,18 +16,27 @@
 			font-family: "Special Elite", system-ui;
 			color: #591F0B;
 			text-align: center;
-			font-size: 80px;
+			font-size: 60px;	/*--1-- heading 80px 有点大，我改 60px */
 		}
 
-		.section-wrapper {		/*--1-- change "section" -----> ".section-wrapper" */	
+		.section-wrapper {		/*--2-- change "section" -----> ".section-wrapper" */	
 			text-align: center;
 			padding: 50px 0;
 		}
-		.section-wrapper p {	/*--2-- change this, only modify p within section-wrapper */
-			line-height: 1.5;	/*--3-- change this, unitless value more flexible */
-			max-width: 50%; 	/*--4-- use % more flexible */
+		.section-wrapper p {	/*--3-- change this so it only modify p within section-wrapper */
+			line-height: 1.5;	/*--4-- change this, unitless value more flexible */
+			max-width: 50%; 	/*--5-- use % more flexible */
 			margin: auto;						 
-			margin-top: 20px;	/*--5-- remove the padding bottom (check remark --9--)*/
+			margin-top: 20px;	/*--6-- remove the padding-bottom (check remark --10--)*/
+		}
+		.form-wrapper {					/*--7-- 加 css 调整 你的 form input 的 width.*/
+			display: block;
+			width: 100%;
+			margin: 50px auto;
+		}
+		.form-wrapper input, textarea {
+			width: 30%;
+			height: 40px;
 		}
 		button {
 			display: inline-block;
@@ -45,40 +54,48 @@
 			border: 1px solid #FFF8E5;
 		}
 		form {
-			margin-top: 2%;		/*<--6-- 用 form 上面的 margin 推开 form 和 p 的距离。 */
+			margin-top: 2%;		/*<--7-- 用 form 上面的 margin 来推开 form 和 p 的距离。 */
 		}
 
-								/*<--7-- 你的 "p" 空的, 所以我删掉。 */
+								/*<--8-- 你的 "p" 空的, 所以我删掉。 */
 
 
 	/*=== R E S P O N S I V E N E S S ===*/
-		@media (max-width: 1080px){
+		@media (max-width: 1340px){
 			#title {
 				font-size: 70px;
 			}
 			.section-wrapper {	
-			margin: 5% auto;
+			margin: 0 auto;
+			padding: 10%;
 			line-height: 1.5;
 			}
 			.section-wrapper p {
 				max-width: 100%;
-				margin: 20px auto;
-				padding: 0 20px;
+				margin: 3% 8%;
+			}
+			.form-wrapper input, textarea {
+				width: 50%;
 			}
 		}
 		@media (max-width: 768px){
 			#title {
-				font-size: 60px;
+				font-size: 50px;
 			}	
 			.section-wrapper p {
-				max-width: 100%;
-				margin: 20px auto;
+				margin: 5% 1%;
+			}
+			.form-wrapper input, textarea {
+				width: 50%;
 			}
 		}
 		@media (max-width: 360px){
 			#title {
-				font-size: 40px;
+				font-size: 36px;
 				padding: 20px;
+			}
+			.form-wrapper input, textarea {
+				width: 80%;
 			}
 		}
 
@@ -113,7 +130,7 @@
 
 	
 <!-- CONTACT-US -->
- 	<section class="section-wrapper">	<!--8-- add class to section -->
+ 	<section class="section-wrapper">	<!--9-- add class to section -->
 		<h1 id="title">
 				Get in touch with us
 		</h1>
@@ -121,26 +138,28 @@
 		We want to ensure that all our customers have the best experience, both in-store and online. That’s why your valuable feedback is so important—it helps us improve the areas that matter most to you.</p>
 		<p>We’d really appreciate a few minutes of your time to tell us about your recent experience with us.</p>
 		<p>Don’t hesitate to drop us a message!</p>
-<!--9-- 每一段 wrap 在 自己的 <p> tag 里面，用 line-height 调整比较 flexible，不需要 padding 。-->
+<!--10-- 每一段 wrap 在 自己的 <p> tag 里面，直接用 line-height 调整比较 flexible。-->
 		
 		<!-- F O R M -->
-			<form onsubmit="return checkForm()"> 
-				<div>												<!--10-- 所有 div class 没有东西，所以我删了 -->
-					<label for="name">Name:*</label><br>
-					<input type="text" id="name" required><br><br>	<!--11-- add required -->
-				</div>
-				<div>
-					<label for="email">Email:*</label><br>
-					<input type="email" id="email" required><br><br>
-				</div>
-				<div> 
-					<label for="message">Message:*</label><br>
-					<textarea name="message" id="message" required></textarea><br><br>
-				</div>
-				<div>
-					<button type="submit">SUBMIT</button>
-				</div>
-			</form>
+			<div class="form-wrapper">
+				<form onsubmit="return checkForm()"> 
+					<div>							<!--11-- 所有 div 的 class 没有东西，所以我删了 -->
+						<label for="name">Name:*</label><br>
+						<input type="text" id="name" required><br><br>	<!--12-- add required -->
+					</div>
+					<div>
+						<label for="email">Email:*</label><br>
+						<input type="email" id="email" required><br><br>
+					</div>
+					<div> 
+						<label for="message">Message:*</label><br>
+						<textarea name="message" id="message" required></textarea><br><br>
+					</div>
+					<div>
+						<button type="submit">SUBMIT</button>
+					</div>
+				</form>
+			</div>
 		</section>
 
 <!-- F O O T E R -->
