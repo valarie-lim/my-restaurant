@@ -16,20 +16,20 @@
 			font-family: "Special Elite", system-ui;
 			color: #591F0B;
 			text-align: center;
-			font-size: 60px;	/*--1-- heading 80px 有点大，我改 60px */
+			font-size: 60px;
 		}
 
-		.section-wrapper {		/*--2-- change "section" -----> ".section-wrapper" */	
+		.section-wrapper {
 			text-align: center;
 			padding: 50px 0;
 		}
-		.section-wrapper p {	/*--3-- change this so it only modify p within section-wrapper */
-			line-height: 1.5;	/*--4-- change this, unitless value more flexible */
-			max-width: 50%; 	/*--5-- use % more flexible */
+		.section-wrapper p {
+			line-height: 1.5;
+			max-width: 50%; 
 			margin: auto;						 
-			margin-top: 20px;	/*--6-- remove the padding-bottom (check remark --10--)*/
+			margin-top: 20px;
 		}
-		.form-wrapper {					/*--7-- 加 css 调整 你的 form input 的 width.*/
+		.form-wrapper {	
 			display: block;
 			width: 100%;
 			margin: 50px auto;
@@ -54,12 +54,8 @@
 			border: 1px solid #FFF8E5;
 		}
 		form {
-			margin-top: 2%;		/*<--7-- 用 form 上面的 margin 来推开 form 和 p 的距离。 */
+			margin-top: 2%;	
 		}
-
-								/*<--8-- 你的 "p" 空的, 所以我删掉。 */
-
-
 	/*=== R E S P O N S I V E N E S S ===*/
 		@media (max-width: 1340px){
 			#title {
@@ -138,14 +134,13 @@
 		We want to ensure that all our customers have the best experience, both in-store and online. That’s why your valuable feedback is so important—it helps us improve the areas that matter most to you.</p>
 		<p>We’d really appreciate a few minutes of your time to tell us about your recent experience with us.</p>
 		<p>Don’t hesitate to drop us a message!</p>
-<!--10-- 每一段 wrap 在 自己的 <p> tag 里面，直接用 line-height 调整比较 flexible。-->
 		
 		<!-- F O R M -->
 			<div class="form-wrapper">
 				<form onsubmit="return checkForm()"> 
-					<div>							<!--11-- 所有 div 的 class 没有东西，所以我删了 -->
+					<div>
 						<label for="name">Name:*</label><br>
-						<input type="text" id="name" required><br><br>	<!--12-- add required -->
+						<input type="text" id="name"><br><br>
 					</div>
 					<div>
 						<label for="email">Email:*</label><br>
@@ -182,4 +177,5 @@
 		}
 	</script>
 </body>
+
 </html>
