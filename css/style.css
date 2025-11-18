@@ -9,7 +9,7 @@
 hr{
 	width: 8vw;
 	border: 2px dashed #591F0B;
-	margin: 10px auto 20px auto;
+	margin: 3% auto;
 }
 footer{
 	text-align: center;
@@ -197,9 +197,13 @@ header.scrolled {
 	width: 700px;
 	height: auto;
 }
+.section-story-text hr{
+width: 6vw;
+margin: 10% 0;
+}
 .section-story-text h1{
 	font-family: "Special Elite", system-ui;
-	font-size: 40px;
+	font-size: 50px;
 	line-height: 1;
 	color: #591F0B;
 	margin: 0 0 25px;
