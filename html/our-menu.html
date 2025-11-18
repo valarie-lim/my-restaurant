@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Our Menu</title>
+<!-- C S S - S T Y L I N G -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
+        .menu-section {
+            max-width: 100%;  /*--1-- use % more flexible */
+            margin: 40px 200px;   /*--2-- horizontal margin i change 200px */
+            padding: 0 20px;
+            text-align: center;
+        }
+        .menu-section h2 {
+            font-family: 'Special Elite', cursive;
+            font-size: 35px;
+            color: #B23F16;
+            margin-bottom: 15px;
+        }
+        .menu-intro {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .menu-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 20px;
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+
+    /*=== R E S P O N S I V E N E S S ===*/
+        @media (max-width: 1080px){
+            .menu-section {
+                margin: 10% 10%;
+            }
+            .menu-item img {
+                width: 80%;
+            }
+        }
+        @media (max-width: 360px){
+            .menu-section {
+                margin: 10% auto;
+                padding: 15px;
+            }
+            .menu-section h2 {
+                font-size: 26px;
+            }
+            .menu-gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+                gap: 20px;
+            }
+            .menu-item img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- N A V I G A T I O N -->
+	<header id="main-header"><a href="#" class="logo">MY Réstaurant</a>
+		<nav>
+			<ul class="navlist">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="about-us.html">About Us</a></li>	
+			<li><a href="#" style="color: #B23F16;">Menu</a></li>
+			<li><a href="our-location.html">Location</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="social-icons">
+		    <a href="https://www.facebook.com"><i class="ri-facebook-box-fill"></i></a>
+		    <a href="https://www.instagram.com"><i class="ri-instagram-fill"></i></a>
+		</div>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+<!-- B A N N E R -->
+	<section class="banner">
+		<div>
+			<img src="../images/img_menu_banner.png" alt="Our Menu">
+		</div>
+	</section>
+
+
+<!-- MENU CONTENT -->
+<section class="menu-section">
+    <h2>Explore Our Authentic Malaysian Menu</h2>
+    <p class="menu-intro">
+        Our menu is a celebration of Malaysia’s rich culinary heritage, featuring a selection of dishes that have been loved for generations. 
+        Each item is carefully crafted to honor traditional flavours while offering a fresh perspective that suits today’s tastes.
+    </p>
+
+    <div class="menu-gallery">
+        <div class="menu-item">
+            <img src="../images/img_menu_01.jpg" alt="Menu Item 1">
+        </div>
+        <div class="menu-item">
+            <img src="../images/img_menu_02.jpg" alt="Menu Item 2">
+        </div>
+        <div class="menu-item">
+            <img src="../images/img_menu_03.jpg" alt="Menu Item 3">
+        </div>
+        <div class="menu-item">
+            <img src="../images/img_menu_04.jpg" alt="Menu Item 4">
+        </div>
+    </div>
+</section>
+
+<!-- F O O T E R -->
+	<footer>
+		<p>ICT1133E Group Project OCT2025</p>
+		<p>Copyright © Group 4</p>
+	</footer>
+
+<!-- J A V A S C R I P T -->
+	<script src="../js/script.js"></script>
+</body>
+</html>

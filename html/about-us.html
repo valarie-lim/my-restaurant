@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+<!-- C S S - S T Y L I N G -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+	<style>
+		.section-wrapper {		/*--1-- change "section" -----> ".section-wrapper" */
+			margin-top: 0;
+			margin-bottom: 0;
+			text-align: center;
+			padding: 100px;
+		}
+		.title {
+			font-family: "Special Elite", system-ui;
+			color: #591F0B;
+			margin-top: 150px;
+			margin-bottom: 40px;
+			font-size: 80px;
+		}
+		.text {
+			line-height: 1.5;	/*--2-- change this, unitless value more flexible */
+			width: 50%;			/*--3-- use % more flexible */
+			margin: auto;
+			font-size: 20px;
+			
+		}
+		.section-wrapper img {	/*--4-- change this so it only modify img within section-wrapper */
+			margin: auto;
+			width: 50%;
+			padding-bottom: 100px;
+		}
+
+	/*=== R E S P O N S I V E N E S S ===*/
+		@media (max-width: 1080px){
+			.section-wrapper {
+				padding: 50px;
+			}
+			.title {
+				font-size: 60px;
+				margin: 50px auto;
+			}
+			.text {
+				line-height: 1.8;
+				width: 100%;
+				margin: 10px auto;
+			}
+			.section-wrapper img {
+			width: 70%;
+			padding-top: 50px;
+		}
+		}
+		@media (max-width: 768px){
+			.title {
+				font-size: 50px;
+				margin: 50px auto;
+			}
+			.text {
+				font-size: 16px;
+			}
+		}
+		@media (max-width: 360px){
+			.section-wrapper {
+				padding: 20px 15px 50px 15px;
+			}
+			.title {
+				font-size: 40px;
+				padding: 20px;
+			}
+			.section-wrapper img {
+			width: 100%;
+			padding-top: 50px;
+		}
+		}
+	</style>
+</head>
+<body>
+<!-- N A V I G A T I O N -->
+	<header id="main-header"><a href="#" class="logo">MY Réstaurant</a>
+		<nav>
+			<ul class="navlist">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#" style="color: #B23F16;">About Us</a></li>	
+			<li><a href="our-menu.html">Menu</a></li>
+			<li><a href="our-location.html">Location</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="social-icons">
+		    <a href="https://www.facebook.com"><i class="ri-facebook-box-fill"></i></a>
+		    <a href="https://www.instagram.com"><i class="ri-instagram-fill"></i></a>
+		</div>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+<!-- B A N N E R -->
+	<section class="banner">
+		<div>
+			<img src="../images/img_about_banner.png" alt="About MY Réstaurant">
+		</div>
+	</section>
+
+<!-- INTRO -->
+	<section class="section-wrapper">	<!--3-- add class to section -->
+		<div>
+			<h1 class="title">Our Story: A Taste of Home</h1>
+			<p class="text">
+				Our story began in a small family kitchen, filled with the comforting aroma of garlic sizzling in the wok and laughter echoing through the walls. Back in 2002, what started as a simple dream — to share the flavours we grew up with — slowly blossomed into MY Réstaurant.
+			</p>
+		</div>
+	</section>
+	
+	<section class="section-wrapper">
+	<div>
+			<img src="../images/img_about_us_01.jpg">
+			<p class="text">
+				Every recipe on our menu carries a piece of our family’s heart. From our grandmother’s secret nasi lemak sambal to the perfectly pulled teh tarik our father taught us to make, each dish tells a story of love, patience, and tradition.
+			</p>
+		</div>
+	</section>
+	
+	<section class="section-wrapper" style="background-color: #FFF8E5;">
+		<div> 
+			<img src="../images/img_about_us_02.jpg">
+			<p class="text">
+					We believe that Malaysian food isn’t just about taste — it’s about connection. It’s the shared memories around the dinner table, the warmth of a home-cooked meal, and the pride of keeping our roots alive in every bite.
+				</p>
+			</div>
+	</section>
+	
+	<section class="section-wrapper">
+		<div>
+			<img src="../images/img_about_us_03.jpg">
+			<p class="text">
+				At MY Réstaurant, we welcome you not just as a guest, but as part of our family. Sit back, enjoy the flavours, and let our dishes bring you a little closer to home.
+			</p>
+		</div>
+	</section>
+
+<!-- F O O T E R -->
+	<footer>
+		<p>ICT1133E Group Project OCT2025</p>
+		<p>Copyright © Group 4</p>
+	</footer>
+
+<!-- J A V A S C R I P T -->
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events Inquiry</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- N A V I G A T I O N -->
+	<header id="main-header"><a href="#" class="logo">MY Réstaurant</a>
+		<nav>
+			<ul class="navlist">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="about-us.html">About Us</a></li>	
+			<li><a href="our-menu.html">Menu</a></li>
+			<li><a href="our-location.html">Location</a></li>
+			<li><a href="#" style="color: #B23F16;">Events</a></li>
+			<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="social-icons">
+		    <a href="https://www.facebook.com"><i class="ri-facebook-box-fill"></i></a>
+		    <a href="https://www.instagram.com"><i class="ri-instagram-fill"></i></a>
+		</div>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+<!-- B A N N E R -->
+	<section class="banner">
+		<div>
+			<img src="../images/img_events_banner.png" alt="Host Events in MY Réstaurant">
+	</section>
+	
+<!-- E V E N T S -->
+	<div class="section-events-text">
+			<h1>Events</h1>
+			<p>Host your next memorable event with us—perfect for gatherings, celebrations, and special occasions, all in a warm and inviting atmosphere.</p>
+	</div>
+
+<!-- E V E N T S    T E X T -->
+		<section class="section-events">
+		<div class="section-events-img container">
+			<img src="../images/img_events_festive_celebrations.jpg" alt="Festive Celebrations">
+			<h5>Festive Celebration</h5>
+			<p>Mark special moments like Hari Raya, Christmas, or New Year in a cosy, relaxed setting. Let us help you create a celebration worth remembering.</p>
+		</div>
+		<div class="section-events-img container">
+			<img src="../images/img_events_birthdays.jpg" alt="Birthdays">
+			<h5>Birthdays</h5>
+			<p>Enjoy a thoughtful celebration surrounded by those who matter most. With our carefully curated menu and inviting ambiance, your birthday can be as relaxed or refined as you like.</p>
+		</div>
+		<div class="section-events-img container">
+			<img src="../images/img_events_corporate_gatherings.jpg" alt="Corporate Gatherings">
+			<h5>Corporate Gatherings</h5>
+			<p>Bring your team together in a comfortable environment, perfect for business lunches, casual meetings, or appreciation events — all served with our signature warmth.</p>
+		</div>
+	</section>
+
+<!-- I N Q U I R Y    F O R M -->
+	<section class="section-form-container">
+		<!-- EVENTS INQUIRY FORM -->
+		<div class="section-events-text">
+			<h1>Host Your Event at MY Réstaurant</h1>
+			<p>Looking for the perfect spot to celebrate? Fill out the form below to inquire about hosting your event with us!</p>
+		</div>
+
+		<form id="eventForm" class="form-container">
+		  <div class="form-group">
+		    <label>Name:<span class="required-field">*</span></label>
+		    <input id="name" type="text" name="Name" tabindex="1" required>
+		  </div>
+		  <div class="form-group">
+		    <label>Phone:<span class="required-field">*</span></label>
+		    <input id="phone" type="text" name="Contact Number" tabindex="2" placeholder="012-3456789" pattern="^[0-9]{3,4}-[0-9]{7}$" title="Please enter a valid phone number (e.g. 012-3456789 or 0111-3456789)" required>
+		  </div>
+		  <div class="form-group">
+		    <label>Email:<span class="required-field">*</span></label>
+		    <input id="email" type="email" name="Email" tabindex="3" placeholder="example@gmail.com" required>
+		  </div>
+		  <div class="form-group">
+		    <label>Number of Guest:<span class="required-field">*</span></label>
+		    <h6 class="form-description"><em>Each of our outlet event halls can accommodate between 10 and 50 guests.</em></h6>
+		    <input id="guest" type="number" name="Guest" min="10" max="50" tabindex="4" placeholder="enter number from 10 to 50" required>
+		  </div>
+		  <div class="form-group">
+		    <label>Outlet:<span class="required-field">*</span></label>
+		    <select id="outlet" name="Outlet" tabindex="5" required>
+		      <option value="">Select outlet</option>
+		      <option value="Johor">Johor</option>
+		      <option value="Kuala Lumpur">Kuala Lumpur</option>
+		      <option value="Penang">Penang</option>
+		      <option value="Selangor">Selangor</option>
+		    </select>
+		  </div>
+		  <div class="form-group">
+		    <label>Date of Event:<span class="required-field">*</span></label>
+		    <input id="eventDate" type="date" name="Date of Event" max="9999-12-31" tabindex="6" required>
+		  </div>
+		  <div class="form-group">
+		    <label>Message:</label>
+		    <textarea id="message" tabindex="7" placeholder="Your Message.." ></textarea>
+		  </div>
+		  <button type="submit" tabindex="8">Submit</button>
+		</form>
+	</section>
+
+<!-- F O O T E R -->
+	<footer>
+		<p>ICT1133E Group Project OCT2025</p>
+		<p>Copyright © Group 4</p>
+	</footer>
+
+<!-- J A V A S C R I P T -->
+	<script src="../js/script.js"></script>
+	<script>
+		// get today's date in YYYY-MM-DD format
+		const dateInput = document.getElementById("eventDate");
+		const today = new Date().toISOString().split("T")[0];
+		// set today's date as the minimum selectable date
+		dateInput.min = today;
+
+
+		// data storing function
+		document.getElementById("eventForm").addEventListener("submit", function(event) {
+		    event.preventDefault(); // stop the form from submitting immediately
+
+		    // get form values
+		    const name = document.getElementById("name").value.trim();
+		    const phone = document.getElementById("phone").value.trim();
+		    const email = document.getElementById("email").value.trim();
+		    const guest = document.getElementById("guest").value;
+		    const outlet = document.getElementById("outlet").value;
+		    const date = document.getElementById("eventDate").value;
+		    const message = document.getElementById("message").value.trim();
+
+		    // store data in sessionStorage
+		    const formData = {
+		      name: name, phone: phone, email: email, 
+		      guest: guest, outlet: outlet, date: date, message: message,
+		    submittedAt: new Date().toLocaleString()
+		    };
+		    sessionStorage.setItem("eventInquiry", JSON.stringify(formData));
+
+		    // redirect to thank you page
+		    window.location.href = "thank-you.html";
+		});
+	</script>
+</body>
+</html>
+
+
+
+

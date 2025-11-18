@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thank You Page</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+	<style>
+		.summary-wrapper{
+			display: flex;
+			justify-content: center;
+			background-color: #FFF8E5;
+			max-width: 100%;
+		}
+		#summary {
+		  max-width: 800px;
+			align-items: left;
+			border: 0 solid transparent;
+			padding: 25px 10%;
+			margin: 15px 5px 50px 5px;
+			background-color: #FFF8E5CC;
+			border-radius: 10px;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+		}
+		#summary h3{
+			margin-bottom: 15px;
+			text-align: center;
+		}
+		#summary h6{
+			margin-top: 15px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<!-- N A V I G A T I O N -->
+	<header id="main-header"><a href="#" class="logo">MY Réstaurant</a>
+		<nav>
+			<ul class="navlist">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="about-us.html">About Us</a></li>	
+			<li><a href="our-menu.html">Menu</a></li>
+			<li><a href="our-location.html">Find Us</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="social-icons">
+		    <a href="https://www.facebook.com"><i class="ri-facebook-box-fill"></i></a>
+		    <a href="https://www.instagram.com"><i class="ri-instagram-fill"></i></a>
+		</div>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+<!-- T H A N K - Y O U -->
+	<section class="section-logo">
+		<div class="thank-you-text">
+			<img src="../images/img_logo.png" alt="MY Réstaurant Authentic Malaysia Cuisine Since 2002">
+			<div id="thank-you-message">
+				<h1>Thank you for reaching out!</h1>
+				<p>Your inquiry has been successfully submitted. Our team will review your message and get back to you within 24 hours.</p>
+			</div>
+		</div>
+		<div class="summary-wrapper">
+			<div id="summary"></div>
+		</div>
+	</section>
+
+<!-- F O O T E R -->
+	<footer>
+		<p>ICT1133E Group Project OCT2025</p>
+		<p>Copyright © Group 4</p>
+	</footer>
+
+<!-- J A V A S C R I P T -->
+	<script src="../js/script.js"></script>
+	<script>
+		// retrieve form data from sessionStorage
+    const data = JSON.parse(sessionStorage.getItem("eventInquiry"));
+
+    if(data){
+      document.getElementById("summary").innerHTML = `
+        <h3>Inquiry Details</h3>
+        <p><strong>Name:</strong> ${data.name}</p>
+        <p><strong>Phone:</strong> ${data.phone}</p>
+        <p><strong>Email:</strong> ${data.email}</p>
+        <p><strong>Number of Guest:</strong> ${data.guest}</p>
+        <p><strong>Event Outlet:</strong> ${data.outlet}</p>
+        <p><strong>Event Date:</strong> ${data.date}</p>
+        <p><strong>Message:</strong> ${data.message}</p>
+        <h6>Submitted on: ${data.submittedAt}</h6>
+      `;
+      downloadSessionStorage();
+    } else {
+      const thankYouMessage = document.getElementById("thank-you-message");
+      if(thankYouMessage) {
+        thankYouMessage.style.display = "none";
+      }
+      document.getElementById("summary").textContent = "No submission found.";
+    }
+	</script>
+	<script>
+	// downloading sessionStorage data as a text file
+    function downloadSessionStorage() {
+    // Create a plain object
+    const storageObj = {};
+
+    // Copy all sessionStorage values into the object
+    for (let i = 0; i < sessionStorage.length; i++) {
+        const key = sessionStorage.key(i);
+        storageObj[key] = sessionStorage.getItem(key);
+    }
+
+    // Convert to readable JSON text
+    const data = JSON.stringify(storageObj, null, 2);
+
+    // Convert to Blob and download
+    const blob = new Blob([data], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'session_data.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    URL.revokeObjectURL(url);
+}
+
+  </script>
+</body>
+</html>

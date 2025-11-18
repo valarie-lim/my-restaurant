@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Our Location</title>
+<!-- C S S - S T Y L I N G -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+	<style>
+	    .outlet {
+	    background: #fff;
+	    border-radius: 8px;
+	    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	    padding: 20px;
+	    margin-bottom: 30px;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    text-align: center;
+		}
+		.outlet h3 {
+		    margin-bottom: 10px;
+		}
+		.outlet p {
+		    margin: 5px 0;
+		}
+		.outlet-img img {
+		    width: 300px;
+		    height: auto;
+		    border-radius: 8px;
+		    transition: transform 0.3s ease;
+		}
+		.outlet-img img:hover {
+		    transform: scale(1.05);
+		}.hover-img {
+		    width: 300px;
+		    height: auto;
+		    border-radius: 8px;
+		    transition: opacity 0.3s ease;
+		}
+
+		/* Subscribe Box */
+		.subscribe-box {
+		    text-align: center;
+		    margin-top: 40px;
+		    padding: 20px;
+		    background: #f8f8f8;
+		    border-radius: 8px;
+		}
+		.subscribe-box input {
+		    padding: 10px;
+		    width: 250px;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    margin-right: 10px;
+		}
+		.subscribe-box button {
+		    padding: 10px 20px;
+		    background-color: #B23F16;
+		    color: #fff;
+		    border: none;
+		    border-radius: 4px;
+		    cursor: pointer;
+		    font-weight: bold;
+		}
+		.subscribe-box button:hover {
+		    background-color: #8e2f10;
+		}
+		/* Location Section */
+		.location-section {
+		    max-width: 1200px;
+		    margin: 40px auto;
+		    padding: 0 20px;
+		}
+		.location-section h2 {
+		    text-align: center;
+		    margin-bottom: 30px;
+		    font-family: 'Special Elite', cursive;
+		    color: #B23F16;
+		     font-size: 35px;
+		}
+
+
+	/*=== R E S P O N S I V E N E S S ===*/
+		@media (max-width: 360px){
+			.subscribe-box input {
+		   		margin: 10% auto;
+			}
+		}
+	</style>
+</head>
+<body>
+<!-- N A V I G A T I O N -->
+	<header id="main-header"><a href="#" class="logo">MY Réstaurant</a>
+		<nav>
+			<ul class="navlist">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="about-us.html">About Us</a></li>	
+			<li><a href="our-menu.html">Menu</a></li>
+			<li><a href="#" style="color: #B23F16;">Location</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="social-icons">
+		    <a href="https://www.facebook.com"><i class="ri-facebook-box-fill"></i></a>
+		    <a href="https://www.instagram.com"><i class="ri-instagram-fill"></i></a>
+		</div>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+<!-- B A N N E R -->
+	<section class="banner">
+		<div>
+			<img src="../images/img_location_banner.png" alt="Our Location">
+		</div>
+	</section>
+
+	
+<!-- LOCATION CONTENT -->
+<section class="location-section">
+    <h2>Our Outlets</h2>
+
+    <!-- Outlet 1 -->
+    <div class="outlet">
+        <h3>JB Mount Austin</h3>
+        <p><strong>Address:</strong> 123, Jln Austin Heights 7/7, Taman Mount Austin, 81100 Johor Bahru, Johor.</p>
+        <p><strong>Tel:</strong> +6017 6655802</p>
+        <div class="outlet-img">
+            <img src="../images/img_outlets_jb_mount_austin.jpg" alt="JB Mount Austin" class="hover-img" data-hover="../images/img_outlets_jb_mount_austin_2.jpg">
+        </div>
+    </div>
+
+    <!-- Outlet 2 -->
+    <div class="outlet">
+        <h3>The Gardens Mall</h3>
+        <p><strong>Address:</strong> Level 3, F-1133, Lingkaran Syed Putra, Mid Valley City, 59200 Kuala Lumpur.</p>
+        <p><strong>Tel:</strong> +6016 8087401</p>
+        <div class="outlet-img">
+            <img src="../images/img_outlets_the_gardens_mall.jpg" alt="The Gardens Mall" class="hover-img" data-hover="../images/img_outlets_the_gardens_mall_2.jpg">
+        </div>
+    </div>
+
+    <!-- Outlet 3 -->
+    <div class="outlet">
+        <h3>Queensbay Mall</h3>
+        <p><strong>Address:</strong> GF88-89, Queensbay Mall, 100, Persiaran Bayan Indah, 11900 Bayan Lepas, Pulau Pinang.</p>
+        <p><strong>Tel:</strong> +6010 8811440</p>
+        <div class="outlet-img">
+            <img src="../images/img_outlets_queensbay_mall.jpg" alt="Queensbay Mall" class="hover-img" data-hover="../images/img_outlets_queensbay_mall_2.jpg">
+        </div>
+    </div>
+
+    <!-- Outlet 4 -->
+    <div class="outlet">
+        <h3>1 Utama Shopping Centre</h3>
+        <p><strong>Address:</strong> LG335, 1 Utama Shopping Centre, Bandar Utama, 47800 Petaling Jaya, Selangor.</p>
+        <p><strong>Tel:</strong> +6012 3456789</p>
+        <div class="outlet-img">
+            <img src="../images/img_outlets_one_utama_shopping_centre.jpg" alt="1 Utama Shopping Centre" class="hover-img" data-hover="../images/img_outlets_one_utama_shopping_centre_2.jpg">
+        </div>
+    </div>
+
+    <!-- Subscribe Field -->
+    <div class="subscribe-box">
+        <h3>Subscribe for Updates</h3>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button id="subscribeBtn">Subscribe</button>
+        <p id="error-msg" style="color:red; display:none;">Please enter a valid email address.</p>
+    </div>
+</section>
+
+
+
+<!-- F O O T E R -->
+	<footer>
+		<p>ICT1133E Group Project OCT2025</p>
+		<p>Copyright © Group 4</p>
+	</footer>
+
+<!-- J A V A S C R I P T -->
+	<script src="../js/script.js"></script>
+	<script>
+    // Subscribe Button Event
+    const subscribeBtn = document.getElementById('subscribeBtn');
+    const emailInput = document.getElementById('email');
+    const errorMsg = document.getElementById('error-msg');
+
+    subscribeBtn.addEventListener('click', () => {
+        const email = emailInput.value.trim();
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if (email.match(emailPattern)) {
+            alert("Thank you for subscribing!");
+            errorMsg.style.display = "none";
+            emailInput.value = "";
+        } else {
+            errorMsg.style.display = "block";
+        }
+    });
+
+    // Image Hover Effect
+    const hoverImages = document.querySelectorAll('.hover-img');
+    hoverImages.forEach(img => {
+        const originalSrc = img.src;
+        const hoverSrc = img.getAttribute('data-hover');
+        img.addEventListener('mouseenter', () => img.src = hoverSrc);
+        img.addEventListener('mouseleave', () => img.src = originalSrc);
+    });
+</script>
+</body>
+</html>
