@@ -203,7 +203,7 @@ margin: 10% 0;
 }
 .section-story-text h1{
 	font-family: "Special Elite", system-ui;
-	font-size: 50px;
+	font-size: 40px;
 	line-height: 1;
 	color: #591F0B;
 	margin: 0 0 25px;
@@ -717,5 +717,6 @@ margin: 10% 0;
 		padding: 0 1%;
 	}
 } 
+
 
 
