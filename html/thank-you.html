@@ -104,35 +104,6 @@
       document.getElementById("summary").textContent = "No submission found.";
     }
 	</script>
-	<script>
-	// downloading sessionStorage data as a text file
-    function downloadSessionStorage() {
-    // Create a plain object
-    const storageObj = {};
-
-    // Copy all sessionStorage values into the object
-    for (let i = 0; i < sessionStorage.length; i++) {
-        const key = sessionStorage.key(i);
-        storageObj[key] = sessionStorage.getItem(key);
-    }
-
-    // Convert to readable JSON text
-    const data = JSON.stringify(storageObj, null, 2);
-
-    // Convert to Blob and download
-    const blob = new Blob([data], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'session_data.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-
-    URL.revokeObjectURL(url);
-}
-
-  </script>
 </body>
+
 </html>
