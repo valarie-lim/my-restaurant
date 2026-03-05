@@ -109,29 +109,6 @@ For smaller screens, the navigation menu switches to a **burger menu layout** to
 
 ---
 
-## Project Structure
-my-restaurant
-│
-├── index.html
-├── pages
-│ ├── about-us.html
-│ ├── contact-us.html
-│ ├── events.html
-│ ├── location.html
-│ ├── our-menu.html
-│
-├── css
-│ └── style.css
-│
-├── js
-│ └── script.js
-│
-├── images
-│
-└── screenshots
-
----
-
 ## What I Learned
 Through this project, I gained practical experience in:
 - Structuring multi-page websites
