@@ -12,8 +12,11 @@ https://valarie-lim.github.io/my-restaurant/
 ---
 
 ## System Preview
-
-![Homepage](screenshots/homepage.png)
+![Home Page](screenshots/home_page.png)
+![Events Page](screenshots/events_page.png)
+![Thank You Page](screenshots/thank_you_page.png)
+![Events Inquiry Form](screenshots/event_form.png)
+![Mobile Burger Menu](screenshots/mobile_wiih_burger_menu.png)
 
 ---
 
