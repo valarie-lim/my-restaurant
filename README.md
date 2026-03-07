@@ -11,7 +11,7 @@ https://valarie-lim.github.io/my-restaurant/
 
 ---
 
-## System Preview
+## Web Pages Preview
 ![Home Page](screenshots/home_page.png)
 ![Events Page](screenshots/events_page.png)
 ![Thank You Page](screenshots/thank_you_page.png)
