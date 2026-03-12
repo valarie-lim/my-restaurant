@@ -1,5 +1,8 @@
 # My Restaurant Website
-HTML | CSS | JavaScript | Responsive Web Design
+![HTML](https://img.shields.io/badge/HTML-orange)
+![CSS](https://img.shields.io/badge/CSS-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
+![Responsive](https://img.shields.io/badge/Responsive-Web%20Design-green)
 
 This project is a multi-page restaurant website developed as part of a group assignment for the Web Design module.
 The website introduces the restaurant, menu offerings, location information, and event hosting services. It also includes an online event inquiry form that allows users to submit booking requests.
@@ -12,10 +15,27 @@ https://valarie-lim.github.io/my-restaurant/
 ---
 
 ## Web Pages Preview
+### Home Page
 ![Home Page](screenshots/home_page.png)
+
+---
+
+### Events Page
 ![Events Page](screenshots/events_page.png)
+
+---
+
+### Thank You Page
 ![Thank You Page](screenshots/thank_you_page.png)
+
+---
+
+### Events Inquiry Form
 ![Events Inquiry Form](screenshots/event_form.png)
+
+---
+
+### Mobile Burger Menu
 ![Mobile Burger Menu](screenshots/mobile_wiih_burger_menu.png)
 
 ---
